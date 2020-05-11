@@ -11,7 +11,7 @@ public class Producto {
 	@Size(max=15,message="El nombre no debe tener mas de 15 caracteres")
 	@NotEmpty(message="Este campo no puede estar vacio")
 	private String nombre;
-	@Size(max=30,message="La descripcion no debe tener mas de 30 caracteres")
+	@Size(max=30,message="La descripcion no debe tener mas de 25 caracteres")
 	@NotEmpty(message="Este campo no puede estar vacio")
 	private String descripcion;
 	@NotNull(message="El campo no puede estar vacio")

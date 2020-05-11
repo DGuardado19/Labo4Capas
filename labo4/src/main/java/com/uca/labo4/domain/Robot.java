@@ -4,7 +4,7 @@ import javax.validation.constraints.AssertTrue;
 
 public class Robot {
 	
-	@AssertTrue(message="UPS no puedes agregar tu producto por que eres un robot, favor hacer click en regresar")
+	@AssertTrue(message="Ups no puedes agregar si eres un robot, regresa porfavor")
 	private Boolean soyRobot;
 
 	public Boolean getSoyRobot() {

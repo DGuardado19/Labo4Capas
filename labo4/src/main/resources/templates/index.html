@@ -11,7 +11,39 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  
+   <h1>Ingresar producto</h1>
+
+  		<div class="w-25 p-3">
+  		<div class="card mb-4"> 
+			<form  method="post" th:action="@{/formProducto}" th:object="${producto}">
+		
+			<div class="form-group">
+			<label>Nombre del producto: </label>
+			<input type="text"  class="form-control" th:field="*{nombre}" width="200"> <br>
+			<span th:errors="*{nombre}" class="text-muted" style="color: #E81505"></span>
+			</div>
+			<div class="form-group">
+			<label>Descripcion del producto: </label>
+			<input type="text" class="form-control" th:field="*{descripcion}" width="200"> <br>
+			<span th:errors="*{descripcion}" class="text-muted" style="color: #E81505"></span>
+			</div>
+			<div class="form-group">
+			<label>Precio del producto: </label>
+			<input type="number" class="form-control" th:field="*{precio}" width="200"> <br>
+			<span th:errors="*{precio}" class="text-muted" style="color: #E81505"></span>
+			</div>
+			<div class="form-group">
+			<label>Fecha de vencimiento del producto: </label>
+			<input type="text" class="form-control" th:field="*{vencimiento}" width="200">
+			<span th:errors="*{vencimiento}" class="text-muted" style="color: #E81505"></span>
+			</div>
+		
+			<input type="submit" class="btn btn-primary" value="Ingresar producto">
+		</form>
+		</div>
+		</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
